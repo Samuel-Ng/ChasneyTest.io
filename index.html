@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+
+
+<head> 
+
+<style>
+
+body{ background-color :white;}
+
+#hd{ position: absolute;  margin-top: 0px; ; background-color: white;
+width:75%; border-width:3px;
+ border-bottom-style: ridge ; border-bottom-color:gold ; 
+font-size: 30px; font-family:Century; text-align: center;margin-left:150px;} 
+
+
+#nav{ position : absolute ; margin-top: 38px; width:100%; 
+z-index: 2; margin-left: 530px;}
+#nav:hover{ cursor: pointer; }
+
+	a{ text-decoration: none; color: #000;}
+	
+
+ 
+
+
+#leb{position: absolute ;  visibility: hidden;  text-align:center;
+width:100%; background-color: white; opacity: 0.97;
+  height:210px;margin-top: 40px;  z-index: 1;}  
+
+#nwb{ position: absolute ;visibility: hidden;  text-align:center;
+
+width:100%; background-color: white;  opacity: 0.97;
+  height:210px;  margin-top: 40px;  z-index: 1; }  
+
+#swb{ position: absolute ;visibility: hidden;  text-align:center;
+width:100%; background-color: white;   opacity: 0.97;
+  height:210px; margin-top: 40px;  z-index: 1;   }
+  
+ 
+#cgb{ position: absolute ; visibility: hidden;  text-align:center;
+width:100%; background-color: white;   opacity: 0.97;
+  height:210px; margin-top: 40px;  z-index: 1;}
+   
+  
+  
+  
+  #le_tb{ margin-left: 500px;  font-size: 20px; font-weight:bold; padding-top:15px;}
+  
+  #nw_tb{ margin-left: 500px;  font-size: 20px; font-weight:bold; padding-top:15px;}
+  #sw_tb{ margin-left: 550px;  font-size: 20px; font-weight:bold;padding-top:15px; }
+     #cg_tb{ margin-left: 550px;  font-size: 20px; font-weight:bold; padding-top:15px;}
+	 
+	 
+  
+  #bg{ position: absolute;   width: 99%;
+margin-top: 0px; height: 800px; width: 100%;  z-index:0; margin-left:0px; }
+
+
+
+ 
+ #du{ background-color: lightgray; width:100%; margin-top:900px}
+ 
+#du1{width: 30% ; height:300px;
+background-image:url("bra_1.jpg") ; background-repeat:no-repeat; 
+background-size: 100% 250px; 
+transition-duration:0.8s; }
+
+#du1:hover{ background-image:url("bra_2.jpg"); background-repeat: no-repeat;
+background-size: 100% 330px; 
+cursor:pointer; }
+
+#du2{ width:  30%;  height:300px; 
+background-image:url("bra_3.jpg") ; background-repeat:no-repeat; 
+background-size: 100% 250px; transition-duration:0.8s;
+}
+#du2:hover{ background-image:url("bra_4.jpg"); background-repeat: no-repeat;
+background-size: 100% 330px; cursor:pointer; }
+
+#du3{ width:  30%;  height:300px; 
+background-image:url("bra_5.jpg") ; background-repeat:no-repeat; 
+background-size: 100% 250px ; transition-duration:0.8s; 
+}
+#du3:hover{ background-image:url("bra_6.jpg"); background-repeat: no-repeat;
+background-size: 100% 330px; cursor:pointer; }
+
+
+
+#fbc{ position: absolute; margin-top: 12px;margin-left: 1320px; 
+
+z-index:1;
+}
+
+
+
+
+button{ background-color: ivory; opacity: 0.7; font-size: 12px; 
+color: black; border-radius: 4px; }
+
+
+button:hover{ transform: scale(1.15); cursor:pointer;}
+
+label{margin: 60px;}
+
+#fb2, #fb3,#fb4, #fb5, #fb6{ border-radius:8px; box-shadow: 5px 5px 7px grey; }
+#fb2:hover{  transform: rotate(15deg); transition-duration:1s; }
+
+#fb3:hover{  transform: rotate(-15deg); transition-duration:1s;}
+
+#fb4:hover{  transform: rotate(15deg); transition-duration:1s;}
+
+#fb5:hover{  transform: rotate(-15deg); transition-duration:1s;}
+
+#fb6:hover{  transform: rotate(15deg); transition-duration:1s;}
+
+
+
+</style>
+
+<script>
+
+function lef(){
+var letb=document.getElementById("leb");
+letb.style.visibility='visible';	
+	
+
+}
+
+
+function lefl(){
+var letb=document.getElementById("leb");
+letb.style.visibility='hidden';	
+	
+
+}
+
+function le_ent(){
+var letb=document.getElementById("leb");
+letb.style.visibility='visible';	
+	
+
+}
+
+
+function le_out(){
+var letb=document.getElementById("leb");
+letb.style.visibility='hidden';	
+	
+
+}
+
+
+
+
+
+function nwf(){
+var nwtb=document.getElementById("nwb");
+nwtb.style.visibility='visible';	
+	
+}
+
+function nwfl(){
+var nwtb=document.getElementById("nwb");
+nwtb.style.visibility='hidden';	
+	
+}
+
+
+function nw_ent(){
+var nwtb=document.getElementById("nwb");
+nwtb.style.visibility='visible';	
+	
+}
+
+function nw_out(){
+var nwtb=document.getElementById("nwb");
+nwtb.style.visibility='hidden';	
+	
+}
+
+
+
+
+
+function swf(){
+var swtb=document.getElementById("swb");
+swtb.style.visibility='visible';	
+	
+}
+
+function swfl(){
+var swtb=document.getElementById("swb");
+swtb.style.visibility='hidden';	
+	
+}
+
+function sw_ent(){
+var swtb=document.getElementById("swb");
+swtb.style.visibility='visible';	
+	
+}
+
+function sw_out(){
+var swtb=document.getElementById("swb");
+swtb.style.visibility='hidden';	
+	
+}
+	
+
+function cgf(){
+var cgtb=document.getElementById("cgb");
+cgtb.style.visibility='visible';	
+	
+}
+
+function cgfl(){
+var cgtb=document.getElementById("cgb");
+cgtb.style.visibility='hidden';	
+	
+}
+
+
+function cg_ent(){
+var cgtb=document.getElementById("cgb");
+cgtb.style.visibility='visible';	
+	
+}
+
+function cg_out(){
+var cgtb=document.getElementById("cgb");
+cgtb.style.visibility='hidden';	
+	
+}
+
+
+
+
+
+var myPix = new Array("bg1.jpg","bg2.jpg","bg3.jpg","bg4.jpg");
+
+function choosePic() {
+     var randomNum = Math.floor(Math.random() * myPix.length);
+     document.getElementById("bg").src = myPix[randomNum];
+
+}
+
+
+window.onload=setInterval(choosePic ,2200);
+
+	
+
+
+</script>
+
+
+</head>
+
+<body >
+<p id='hd'> Chasney Beauty</p>
+
+
+<p id="nav" >
+&nbsp; &nbsp;<button id='le' onmouseover="lef()" onmouseout="lefl()" >Lingerie &nbsp;&nbsp;</button>
+
+<button  id='nw' onmouseover="nwf()" onmouseout="nwfl()">&nbsp;Nightwear &nbsp;</button>
+
+
+<button id='sw' onmouseover="swf()" onmouseout="swfl()">&nbsp;Swimwear&nbsp;</button>
+
+<button id='cg' onmouseover="cgf()" onmouseout="cgfl()">&nbsp;Sleepware &bag &nbsp;</button>
+
+
+</p>
+
+
+
+<div id="leb" onmouseover="le_ent()" onmouseout="le_out()">
+<table id='le_tb' >
+<tr><td style="height:100px; width:200px;" ><a href='thong.html' > <img src='tg-1.jpg' width='120' height='80'></a></td> 
+<td><a href='briefs.html' > <img src='bf-1.jpg' width='120' height='80'></a></td></tr>
+<tr><td> <a href='bra.html' ><img src='bra-5.jpg' width='120' height='80'></a> </td><td> <a href='suspender.html' >
+<img src='sus-1.jpg' width='120' height='80'></a></td></tr>
+
+</table>
+</div>
+
+
+
+<div id="nwb" onmouseover="nw_ent()" onmouseout="nw_out()">
+<table id='nw_tb'>
+<tr><td style="height:100px; width:200px;" > <a href='kimono.html' ><img src='km-1.jpg' width='120' height='100'></a></td> 
+<td><a href='nightwear.html' ><img src='nw-3.jpg' width='120' height='100'></a></td></tr>
+<tr><td> <a href='pants.html' ><img src='ps-2.jpg' width='120' height='80'></a></td><td> </td></tr>
+
+
+</table>
+</div>
+
+
+<div id="swb" onmouseover="sw_ent()" onmouseout="sw_out()">
+<table id='sw_tb'>
+<tr><td style="height:100px; width:200px;" ><a href='bikini.html' > <img src='bi-esp.JPG' width='100' height='100'></a></td> 
+<td><a href='onepiece.html' ><img src='op-5.jpg' width='100' height='100'></a></td></tr>
+<tr><td> <a href='beachwear.html' > <img src='bw-2.jpg' width='100' height='85'></a></td><td> </td></tr>
+
+
+</table>
+</div>
+
+<div id="cgb" onmouseover="cg_ent()" onmouseout="cg_out()" >
+<table id='cg_tb'>
+<tr><td style="height:100px; width:200px;" ><a href='bag.html' > <img src='bag-2.jpg' width='80' height='80'></a></td> 
+<td><a href='sleepwear.html' > <img src='spw-1.jpg' width='80' height='80'></a></td></tr>
+
+
+
+</table>
+</div>
+<br />
+<br />
+
+<p id="fbc"><span style=" font-size: 20px; font-weight:bold; color:silver ;">Choose by fabrics:</span><br /><br />
+<a href="fb2.html"><img id='fb2'  src='fb-2.jpg'  width="100px" height="100px"></a>
+<br /><br />
+<a href="fb3.html"><img id='fb3' src='fb-3.jpg'  width="100px" height="100px"></a><br /><br />
+<a href="fb4.html"><img id='fb4' src='fb-4.jpg' width="100px" height="100px" ></a><br /><br />
+<a href="fb5.html"><img id='fb5' src='fb-5.jpg' width="100px" height="100px" ></a><br /><br />
+<a href="fb6.html"><img id='fb6' src='fb-6.jpg'  width="100px" height="100px"></a>
+
+</p>
+
+
+
+<br />
+<img  id='bg'>
+
+
+
+<p id='du'>
+<p style=" font-size:20px;  lineHeight: 16px;" >New brasseries coming</p>
+<p style="color: gold; text-align:left; ">**************************</p>
+
+<p id='du1' style="display:inline-block;"><label> $520</label></p>
+<p id='du2' style="display:inline-block;" ><label>$510</label></p>
+<p id='du3'  style="display:inline-block;"><label>$550</label></p>
+
+
+
+</p>
+
+
+<br />
+
+<br />
+
+<br />
+
+<p style="text-align: center;"><span style=" font-size: 18px;">  Developed by Samuel Ng for testing purposes</span></p>
+
+
+
+</body>
+
+
+
+
+</html>
